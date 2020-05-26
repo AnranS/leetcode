@@ -17,24 +17,21 @@ function ListNode(val) {
 }
 
 var detectCycle = function (head) {
-    if (!head || !head.next) {
-        return null;
+    let slowPointer = head
+    let fastPointer = head
+    while (fastPointer && fastPointer.next) {
+        slowPointer = slowPointer.next
+        fastPointer = fastPointer.next.next
+        if (slowPointer === fastPointer) {
+            slowPointer = head;
+            while (slowPointer !== fastPointer) {
+                slowPointer = slowPointer.next
+                fastPointer = fastPointer.next
+            }
+            return slowPointer
+        }
     }
-    let fast = head.next, slow = head
-    while (fast !== slow) {
-        if (!fast || !fast.next) return null;
-        fast = fast.next.next;
-        slow = slow.next;
-    }
-    let nextSlow = head;
-    let current = 0;
-    slow = slow.next;
-    while (slow !== nextSlow) {
-        current++;
-        slow = slow.next;
-        nextSlow = nextSlow.next;
-    }
-    return nextSlow;
+    return null
 };
 
 let n1 = new ListNode(3);
