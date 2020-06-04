@@ -2,12 +2,12 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var productExceptSelf = function (nums) {
+function productExceptSelf(nums: number[]): number[] {
     // 缓存尾部乘积
-    let lastArr = [];
-    let res = [];
+    let lastArr = new Array<number>();
+    let res = new Array<number>();
     lastArr.push(1);
-    let sum = 1;
+    let sum: number = 1;
     for (let i = nums.length - 1; i >= 0; i--) {
         sum *= nums[i];
         lastArr.push(sum);
