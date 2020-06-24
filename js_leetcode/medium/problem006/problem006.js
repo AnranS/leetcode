@@ -12,7 +12,6 @@ var convert = function(s, numRows) {
     for(let i = 0; i< len; i++) rows[i] = "";
     let loc = 0;
     let down = false;
-
     for(const c of s) {
         rows[loc] += c;
         if(loc == 0 || loc == numRows - 1)
