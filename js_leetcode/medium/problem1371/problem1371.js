@@ -1,12 +1,11 @@
 /**
- * @description leetcode1371每个元音包含偶数次的最长子字符串
  * @param {string} s
  * @return {number}
  */
-var findTheLongestSubstring = function(s) {
+var findTheLongestSubstring = function(str) {
     let res = 0 
     let bitArray = 0 // 前缀区间的bitArray
-    let vowel = { a: 1, e: 2, i: 4, o: 8, u: 16 } // 对照表
+    let vowel = { w: 1, b: 2, j: 4, r: 8 } // 对照表
     let map = { 0: -1 } // map存放各个前缀区间的bitArray
     for (let i = 0; i < str.length; i++) { // 遍历str串
         let c = str[i] // 获取当前遍历的字符
@@ -21,3 +20,17 @@ var findTheLongestSubstring = function(s) {
     }
     return res
 };
+
+// iezedktbkrsgomiryarucexkwb
+// console.log('gqumtrmglczxgfdfwmyduambftpwcifmasuvueercxlyupdktkgupndnarsktbbrjxfsnmwqmcrkvtgumvssdjbppxsggohvlpumzwfpmkkressqljknueprhkqgocwebkjhinrhqoftjjykxrymqkpfcaahnqlvetzapsmpigrdrqygnwqpbeeghpvnxdsvemdvznwutazcviorgdjphwtdbgwlfowmdywywvoerqjdwcbmbqicilmxeskhbvlpumpslpbehmeixixfidddnymnitltcajgqdlupwgvhcggiqlvjvrqzvymoobxpyubthxirqonfzzjsnqkdfmydwhfyokppcwiauuguitmjvxnsnjnnqapzsyxekxagvejmwtdbbfxvwvbwlitjodgxiosebcyzzburevbuwpuuvumcwwrzettxgkuepmdihnfrgutgaubincebteptyklzgksobsjspefgfmkxmhgsknlcvcgoqoy'.length);
+console.log(findTheLongestSubstring('cgsbeqtntfeavzugeoaajtwvczysbzpvxdvmcpheziipqgzoubrzuitrbtcwexeebbgmacmfdblubiwbdcyqkfaeatwvdmpfyixkjaaxbtdiydkvtvtjlapuozngrqcrnwwjlcdntllvxmqrvqydsrhkrrddqdygdftyonjteawcxryqlavztlqgnpxsevudfrkfeasbipfkhzkrsmeyjckxvucxsskjhxanxklbogirsfqludfdxylcgfbqddbtyruqixdxkknouspgqztexahlngoubiiachgnstafvcjjfeofcfmintblfdvqxulnpafvtpnavwiwhenqtwlpighuttxpcmsymxeyjbujmbjlsroyvqmjrnqdutqptssejizhdqzxvroschzmhupdzjnelpoxilhihlaqnwbtuluysxzvmznvfboidysqkdtexigcfkpqamtgsnsyezbwmckbvuhdewkmzjfzcsnejvslaftpwnffmvfkveftdwguvktiyxntncqstnibnpfqgxsebefuccltyryretsivyqmuwfonhktmrwlmfcjuhyoooaqqclrxacwyxrwmlnedfotwtnpcdvsghhnwdptwitfqaitdbwvpnnzvrhjjisibosqtythlzfcorlpppuqdfwfwvruyunmpbblbienjcgvsdgblrajzezmuibfksbjmiahyfvmkamqwktdjxktykashflkzxthanoxaxsuuzzsxjoegnbhjerylidvvwureqnavdxetipqqpzwxmddwwhaqzyllwoalznkdwhcqnglgktwbxzyhxsysdjnwicqrrfrnnlwxkloyyacpnaedplujsneezdgroytkntouxpckczcvismhsqrtjqhtwmwpfyuthgykcsotgudjajchxtdzrgayziopyzetxgbsjkpoefjzoayexlkvqpbgwvtmpmxztfpussmzfiruspzjjbaxdmcqrxklabgljzx'))
+
+let testStrs = ''
+
+for(let i = 0;i < 1000; i++) {
+    let character = String.fromCharCode(Math.floor(Math.random()*26)+"a".charCodeAt(0)); 
+    testStrs += character;
+}
+
+console.log(testStrs);
+   
