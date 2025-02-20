@@ -8,6 +8,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def dfs(self, root: Optional[TreeNode], left: int, right: int) -> bool:
         if root is None:

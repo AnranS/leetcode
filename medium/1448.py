@@ -7,6 +7,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def goodNodes(self, root: TreeNode, mx=-inf) -> int:
         if not root:

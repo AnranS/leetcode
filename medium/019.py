@@ -3,6 +3,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+
 from typing import Optional
 
 
@@ -17,6 +19,5 @@ class Solution:
             right = right.next
             left = left.next
         # 由于left和right之间的差值一直为n所此时left为倒数第n+1个节点
-        left.next = left.next.next    
+        left.next = left.next.next
         return dummy.next
-        

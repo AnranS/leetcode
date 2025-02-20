@@ -5,13 +5,14 @@
 #          otherwise return 0
 # def guess(num: int) -> int:
 
+
 class Solution:
     def guessNumber(self, n: int) -> int:
         left = 1
         right = n
         while left <= right:
             mid = (left + right) // 2
-            res = guess(mid) # type: ignore
+            res = guess(mid)  # type: ignore
             if res == 0:
                 return mid
             elif res == -1:

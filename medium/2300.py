@@ -14,4 +14,3 @@ class Solution:
             count = p_len - bisect_right(potions, success // i)
             pairs.append(count)
         return pairs
-

@@ -20,4 +20,4 @@ class Solution:
                     less += 1  # x 的出现次数从 >= 变成 <（下一行代码执行后）
                 cnt_s[x] -= 1  # 左端点字母移出子串
                 left += 1  # 移动子串左端点
-        return "" if ans_left < 0 else s[ans_left: ans_right + 1]
+        return "" if ans_left < 0 else s[ans_left : ans_right + 1]

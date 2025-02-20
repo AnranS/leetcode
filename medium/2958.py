@@ -6,7 +6,7 @@ class Solution:
         d = Counter()
         left = 0
         ans = 0
-        for (right, n) in enumerate(nums):
+        for right, n in enumerate(nums):
             d[n] += 1
             while d[n] > k:
                 d[nums[left]] -= 1

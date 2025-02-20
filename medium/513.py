@@ -8,6 +8,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
         q = deque([root])

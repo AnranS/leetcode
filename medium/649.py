@@ -21,4 +21,4 @@ class Solution:
                 rq.popleft()
                 d = dq.popleft()
                 dq.append(d + n)
-        return 'Radiant' if rq else 'Dire'
+        return "Radiant" if rq else "Dire"

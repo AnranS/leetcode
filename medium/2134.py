@@ -8,7 +8,7 @@ class Solution:
         k = Counter(nums)[1]
         if k == 0:
             return 0
-        window = nums[:k - 1]
+        window = nums[: k - 1]
         cnt = Counter(window)
         ans = inf
         for i in range(n):

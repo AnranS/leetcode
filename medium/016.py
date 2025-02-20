@@ -25,5 +25,5 @@ class Solution:
                     if target - d < min_diff:
                         min_diff = target - d
                         ans = d
-                    left += 1 
+                    left += 1
         return ans

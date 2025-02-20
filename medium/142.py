@@ -4,6 +4,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 from typing import Optional
 
 

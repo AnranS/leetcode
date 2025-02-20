@@ -18,4 +18,3 @@ class Solution:
                 points[i][1] = min(pre[1], current[1])
 
         return p_len - ans
-

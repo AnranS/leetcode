@@ -11,8 +11,9 @@ class Solution:
                 if extra < n - k:
                     return False
                 else:
-                    extra -= (n-k)
+                    extra -= n - k
         return True
+
     def minimizeArrayValue(self, nums: List[int]) -> int:
         left, right = 0, max(nums)
         while left < right:
