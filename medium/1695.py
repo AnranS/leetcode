@@ -21,7 +21,8 @@ class Solution:
                     left += 1
                     s -= out_
         return ans
-        
-r = Solution().maximumUniqueSubarray([4,2,4,5,6])
+
+
+r = Solution().maximumUniqueSubarray([4, 2, 4, 5, 6])
 
 print(r)
